@@ -7,8 +7,8 @@ window_height = 800
 
 window = pygame.display.set_mode((window_width, window_height))
 
-columns = 40
-rows = 40
+columns = 50
+rows = 50
 
 box_width = window_width // columns
 box_height = window_height // rows
@@ -140,3 +140,4 @@ def main():
 
 
 main()
+
