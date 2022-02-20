@@ -2,19 +2,20 @@ from tkinter import messagebox, Tk
 import pygame
 import sys
 
-window_width = 500
-window_height = 500
+window_width = 800
+window_height = 800
 
 window = pygame.display.set_mode((window_width, window_height))
 
-columns = 25
-rows = 25
+columns = 40
+rows = 40
 
 box_width = window_width // columns
 box_height = window_height // rows
 
 grid = []
 queue = []
+path = []
 
 
 class Box:
@@ -27,6 +28,7 @@ class Box:
         self.queued = False
         self.visited = False
         self.neighbours = []
+        self.prior = None
 
     def draw(self, win, color):
         pygame.draw.rect(win, color, (self.x * box_width, self.y * box_height, box_width-2, box_height-2))
@@ -98,10 +100,14 @@ def main():
                 current_box.visited = True
                 if current_box == target_box:
                     searching = False
+                    while current_box.prior != start_box:
+                        path.append(current_box.prior)
+                        current_box = current_box.prior
                 else:
                     for neighbour in current_box.neighbours:
                         if not neighbour.queued and not neighbour.wall:
                             neighbour.queued = True
+                            neighbour.prior = current_box
                             queue.append(neighbour)
             else:
                 if searching:
@@ -114,17 +120,19 @@ def main():
         for i in range(columns):
             for j in range(rows):
                 box = grid[i][j]
-                box.draw(window, (50, 50, 50))
+                box.draw(window, (100, 100, 100))
 
                 if box.queued:
                     box.draw(window, (200, 0, 0))
                 if box.visited:
                     box.draw(window, (0, 200, 0))
+                if box in path:
+                    box.draw(window, (0, 0, 200))
 
                 if box.start:
                     box.draw(window, (0, 200, 200))
                 if box.wall:
-                    box.draw(window, (90, 90, 90))
+                    box.draw(window, (10, 10, 10))
                 if box.target:
                     box.draw(window, (200, 200, 0))
 
