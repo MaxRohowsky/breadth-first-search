@@ -1,6 +1,6 @@
 # Dijkstra Pathfinding Algorithm in Python (with Pygame)
 
-![Preview](preview.png)
+![Preview](/preview.png)
 <br>
 <br>
 
