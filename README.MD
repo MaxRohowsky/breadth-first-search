@@ -32,7 +32,7 @@ You can manually draw walls, and the algorithm will find the path from the start
 Requirements: You must have [Python](https://www.python.org/downloads/) installed and preferably a code editor like [PyCharm](https://www.jetbrains.com/pycharm/download/).
 
 1. Clone the repository 
-2. In the terminal, navigate to the directory where the repository was cloned, e.g., `C:\Users\Max\PycharmProjects\neat-chrome-dinosaur`
+2. In the terminal, navigate to the directory where the repository was cloned, e.g., `C:\Users\Max\PycharmProjects\dijkstra-pathfinding`
 3. Create a virtual environment, activate it, and install pygame by running the following commands in the terminal:
     ```bash
     python -m venv venv #This creates a virtual environment
