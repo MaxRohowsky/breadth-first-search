@@ -1,4 +1,4 @@
-# NEAT Chrome Dino Game
+# Dijkstra Pathfinding Algorithm in Python (with Pygame)
 
 ![Preview](/preview.png)
 <br>
@@ -45,12 +45,13 @@ Requirements: You must have [Python](https://www.python.org/downloads/) installe
     ```
 
 ## Controls
-- You don't need to control the dinosaur. The AI will do that for you :)
+- Left mouse to draw walls
+- Right mouse to set target point
+- Space to start the algorithm
 
 ## Libraries
 
 - [pygame](https://www.pygame.org/news): Pygame is a cross-platform set of Python modules designed for writing video games.
-- [NEAT](https://neat-python.readthedocs.io/en/latest/): NEAT is a method developed by Kenneth O. Stanley for evolving arbitrary neural networks.
 
 ## FAQ
 - How to Open GitHub Projects in PyCharm? [Explained Here](https://youtu.be/cAnWazo5pFU)
