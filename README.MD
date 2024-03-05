@@ -4,7 +4,14 @@
 <br>
 <br>
 
-**Dijkstra Pathfinding** in **Python** using **Pygame**! 👓
+##  **Dijkstra Pathfinding** in **Python** using **Pygame**! 👓
+
+**Show support:**
+<br>
+Star 🌟 the Project: ![GitHub stars](https://img.shields.io/github/stars/maxontech/dijkstra-pathfinding.svg?style=social&label=Star)
+<br>
+Follow 🤝 on GitHub: ![GitHub followers](https://img.shields.io/github/followers/maxontech.svg?style=social&label=Follow)
+<br>
 
 Made by [maxontech](https://twitter.com/max_on_tech)
 
