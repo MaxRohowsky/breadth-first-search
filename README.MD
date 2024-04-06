@@ -48,7 +48,7 @@ Requirements: You must have [Python](https://www.python.org/downloads/) installe
     ```
 4. Run the game by running the following command in the terminal:
     ```bash
-    python main.py
+    python pathfinding.py
     ```
 
 ## Controls
