@@ -45,6 +45,11 @@ class Box:
             self.neighbours.append(grid[self.x][self.y + 1])
 
 
+# Initialize Pygame's font module
+pygame.font.init()
+font = pygame.font.SysFont("Calibri", 24)
+
+
 # Create Grid
 for i in range(columns):
     arr = []
@@ -88,7 +93,7 @@ def main():
                         start_box.visited = True
                         queue.append(start_box)
                         start_box_set = True
-                        
+
             elif event.type == pygame.MOUSEMOTION:
                 x = pygame.mouse.get_pos()[0]
                 y = pygame.mouse.get_pos()[1]
@@ -149,6 +154,18 @@ def main():
                     box.draw(window, (10, 10, 10))
                 if box.target:
                     box.draw(window, (200, 200, 0))
+
+                # Render instructions text
+            instructions = [
+                "Instructions:",
+                "1. Left click to set start",
+                "2. Left click and hold to draw walls",
+                "3. Right click to set target",
+                "4. Press SPACE to run"
+            ]
+            for i, instruction in enumerate(instructions):
+                text_surface = font.render(instruction, True, (255, 255, 255))
+                window.blit(text_surface, (0, window_height - (len(instructions) - i) * 20 - 10))
 
         pygame.display.flip()
 

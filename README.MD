@@ -1,14 +1,14 @@
-# Dijkstra Pathfinding Algorithm in Python (with Pygame)
+# Breadth-First Search Algorithm in Python (with Pygame)
 
 ![Preview](/preview.png)
 <br>
 <br>
 
-##  **Dijkstra Pathfinding** in **Python** using **Pygame**! 👓
+##  **Breadth-First Search** in **Python** using **Pygame**! 👓
 
 **Show support:**
 <br>
-Star 🌟 the Project: ![GitHub stars](https://img.shields.io/github/stars/maxontech/dijkstra-pathfinding.svg?style=social&label=Star)
+Star 🌟 the Project: ![GitHub stars](https://img.shields.io/github/stars/maxontech/breadth-first-search.svg?style=social&label=Star)
 <br>
 Follow 🤝 on GitHub: ![GitHub followers](https://img.shields.io/github/followers/maxontech.svg?style=social&label=Follow)
 <br>
@@ -27,7 +27,7 @@ Made by [maxontech](https://twitter.com/max_on_tech)
 
 ## Description
 
-This is a visual implementation of **Dijkstra's Pathfinding** algorithm.
+This is a visual implementation of the **Breadth-First Search** algorithm.
 
 You can manually draw walls, and the algorithm will find the path from the start to the end.
 
@@ -39,7 +39,7 @@ You can manually draw walls, and the algorithm will find the path from the start
 Requirements: You must have [Python](https://www.python.org/downloads/) installed and preferably a code editor like [PyCharm](https://www.jetbrains.com/pycharm/download/).
 
 1. Clone the repository 
-2. In the terminal, navigate to the directory where the repository was cloned, e.g., `C:\Users\Max\PycharmProjects\dijkstra-pathfinding`
+2. In the terminal, navigate to the directory where the repository was cloned, e.g., `C:\Users\Max\PycharmProjects\breadth-first-search-algorithm`
 3. Create a virtual environment, activate it, and install pygame by running the following commands in the terminal:
     ```bash
     python -m venv venv #This creates a virtual environment
